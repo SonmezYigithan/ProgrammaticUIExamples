@@ -11,13 +11,16 @@ class ViewController: UIViewController {
     
     let dataSource: [String] = ["USA", "Turkiye", "Japan", "Albania", "Korea", "USA", "Turkiye", "Japan", "Albania", "Korea","USA", "Turkiye", "Japan", "Albania", "Korea","USA", "Turkiye", "Japan", "Albania", "Korea",]
     
-    var collectionView: UICollectionView!
+    var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        return UICollectionView(frame: .zero, collectionViewLayout: layout)
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        let layout = UICollectionViewFlowLayout()
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        
         view.addSubview(collectionView)
         applyConstraints()
         
@@ -54,11 +57,15 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellSize = CGSize(width: view.frame.width/2 - 20, height: 250)
-        print(cellSize)
         return cellSize
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
 }
 
