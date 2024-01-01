@@ -12,6 +12,7 @@
 		C116F8222B4324F500E5C19E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116F8212B4324F500E5C19E /* ViewController.swift */; };
 		C116F8272B4324F700E5C19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C116F8262B4324F700E5C19E /* Assets.xcassets */; };
 		C116F82A2B4324F700E5C19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C116F8282B4324F700E5C19E /* LaunchScreen.storyboard */; };
+		C116F8332B43284400E5C19E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116F8322B43284400E5C19E /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C116F8262B4324F700E5C19E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C116F8292B4324F700E5C19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C116F82B2B4324F700E5C19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C116F8322B43284400E5C19E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		C116F81C2B4324F500E5C19E /* ProgrammaticUIExamples */ = {
 			isa = PBXGroup;
 			children = (
+				C116F8312B43283000E5C19E /* ViewControllers */,
 				C116F81D2B4324F500E5C19E /* AppDelegate.swift */,
 				C116F81F2B4324F500E5C19E /* SceneDelegate.swift */,
 				C116F8212B4324F500E5C19E /* ViewController.swift */,
+				C116F8322B43284400E5C19E /* CollectionViewCell.swift */,
 				C116F8262B4324F700E5C19E /* Assets.xcassets */,
 				C116F8282B4324F700E5C19E /* LaunchScreen.storyboard */,
 				C116F82B2B4324F700E5C19E /* Info.plist */,
 			);
 			path = ProgrammaticUIExamples;
+			sourceTree = "<group>";
+		};
+		C116F8312B43283000E5C19E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			files = (
 				C116F8222B4324F500E5C19E /* ViewController.swift in Sources */,
 				C116F81E2B4324F500E5C19E /* AppDelegate.swift in Sources */,
+				C116F8332B43284400E5C19E /* CollectionViewCell.swift in Sources */,
 				C116F8202B4324F500E5C19E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
